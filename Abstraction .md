@@ -68,5 +68,6 @@ print("Circle Area:", c.calculate_area())
 ```
 ## Output
 <img width="683" height="694" alt="image" src="https://github.com/user-attachments/assets/d5368ebd-6532-43b3-972c-e650e9129b21" />
+
 ## Result
 Thus, the Python program demonstrating abstract class and method implementation using subclasses was successfully executed.
