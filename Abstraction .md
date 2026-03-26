@@ -29,7 +29,44 @@ To create an **abstract class** named `Shape` with an **abstract method** `calcu
 ---
 
 ## 💻 Program
+```
+from abc import ABC, abstractmethod
 
+# Abstract class
+class Shape(ABC):
+    
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+# Rectangle class
+class Rectangle(Shape):
+    
+    def __init__(self, length=5, breadth=3):
+        self.length = length
+        self.breadth = breadth
+    
+    def calculate_area(self):
+        return self.length * self.breadth
+
+# Circle class
+class Circle(Shape):
+    
+    def __init__(self, radius=4):
+        self.radius = radius
+    
+    def calculate_area(self):
+        return 3.14 * self.radius * self.radius
+
+# Create objects
+r = Rectangle()
+c = Circle()
+
+# Display results
+print("Rectangle Area:", r.calculate_area())
+print("Circle Area:", c.calculate_area())
+```
 ## Output
-
+<img width="683" height="694" alt="image" src="https://github.com/user-attachments/assets/d5368ebd-6532-43b3-972c-e650e9129b21" />
 ## Result
+Thus, the Python program demonstrating abstract class and method implementation using subclasses was successfully executed.
